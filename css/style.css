@@ -13,6 +13,14 @@ a,a:hover{
 .logo img {
     width: 115px;
 }
+ul#menu-primary li:last-child a {
+    border-radius: 50%;
+    background-color: #e8e8e8;
+    padding: 3px 8px;
+}
+ul#menu-primary li:last-child a i {
+    font-size: 15px;
+}
 .header {
     position: fixed;
     top: 0;
@@ -126,6 +134,13 @@ ul.anime li:nth-child(1) span {
     display: inline-block;
     font-size: 20px;
     margin-top: 19px;
+    border:1px solid transparent;
+    transition: 0.3s;
+}
+.left_side_content a:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
 }
 .our_story {
     padding: 100px 0px;
@@ -160,6 +175,9 @@ ul.common_brands {
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+.common_brands li:hover {
+    box-shadow: 0 10px 24px 0 rgba(98, 98, 98, 0.1);
 }
 ul.common_brands img {
     width: 130px;
@@ -214,9 +232,22 @@ footer {
     color: #fff;
     padding: 20px 0px;
     text-align: center;
+    position: relative;
 }
 footer p {
   margin-bottom: 0px;
+}
+div#back2Top {
+    position: fixed;
+    right: 37px;
+    background-color: #2a4e91;
+    padding: 10px 20px;
+    bottom: 7px;
+    cursor: pointer;
+}
+div#back2Top i {
+    transform: scale(1.2,1.3);
+    color : #fff;
 }
 .box_right {
     margin: auto;
@@ -285,4 +316,74 @@ footer p {
 .our_story_right p {
     color: #5C6A88;
     font-size: 16px;
+}
+@media only screen and (max-width:991px){
+  .AppToggle{
+    display:block;
+    position:relative;
+    float: right;
+  }
+  .AppMenu{
+    display:none;
+  }
+
+  .AppToggle span{
+    display: block;
+      width: 25px;
+      height: 2px;
+      background-color: #f4a340;
+      margin: 5px 0px;
+      transition:0.4s;
+  }
+  .AppMenu.active{
+    display:block;
+  }
+  .AppToggle.active span:nth-child(1){
+    transform: rotate(45deg);
+    transform-origin: 0%;
+    margin: 0 0 8px 0;
+  }
+  .AppToggle.active span:nth-child(2){
+    opacity: 0;
+  }
+  .AppToggle.active span:nth-child(3){
+    transform: rotate(-45deg);
+    transform-origin: 0%;
+  }
+  .AppMenu.active ul{
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    text-align: left;
+    top: 49px;
+    background-color: #fafafa;
+    padding: 10px 0px 15px;
+    border-bottom: 1px solid #f4a340;
+  }
+  .AppMenu.active ul li{
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+  }
+  .AppMenu.active ul li a{
+    display: block;
+    padding: 6px 15px;
+    font-size: 16px;
+    letter-spacing: normal;
+  }
+  .header{
+    padding: 10px 15px;
+    background-color: #fff;
+  }
+  .sub_header .logo{
+    width: 140px;
+  }
+  .sub_header .HRmenu{
+    width: calc(100% - 140px);
+  }
+  .logo a img {
+    width: 140px;
+}
 }
