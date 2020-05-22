@@ -14,7 +14,7 @@ li{
   background-repeat: no-repeat;
   padding: 50px 0px;
 }
-.banner .row,.our_story .row{
+.banner .row,.our_story .row,.brands .row{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -51,29 +51,68 @@ li{
     background: -webkit-linear-gradient(0deg, #F7F7F7 66%, #2C69FF 40%);
     background: -o-linear-gradient(90deg, #F7F7F7 66%, #2C69FF 40%);
     background: -moz-linear-gradient(90deg, #F7F7F7 66%, #2C69FF 40%);
-    padding: 30px 0px;
+    padding: 40px 0px;
 }
 .extraheight{
   background: linear-gradient(90deg, #FFFFFF 66%, #2C69FF 40%);
   background: -webkit-linear-gradient(0deg, #FFFFFF 66%, #2C69FF 40%);
   background: -o-linear-gradient(90deg, #FFFFFF 66%, #2C69FF 40%);
   background: -moz-linear-gradient(90deg, #FFFFFF 66%, #2C69FF 40%);
-  height: 30px;
+  height: 40px;
 }
 ul.common_brands {
     display: flex;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    margin-right: 40px;
 }
-ul.common_brands li {
+.common_brands li {
     display: flex;
     flex-wrap: wrap;
-    width: calc(25% - 40px);
-    margin: 0px 20px;
-    padding: 30px 0px 30px;
+    width: 25%;
+    margin: auto;
+    padding: 30px 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 ul.common_brands img {
     width: 130px;
     object-fit: contain;
     object-position: center;
+    height:65px;
+}
+ul.f2_brands.common_brands {
+    border-bottom: 1px solid #e7e7e7;
+    border-top: 1px solid #e7e7e7;
+}
+.common_brands li:nth-child(2) {
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    margin: 0px;
+}
+.common_brands li:nth-child(3){
+  border-right: 1px solid #e7e7e7;
+}
+.brand_right span {
+    font-size: 24px;
+    color: #fff;
+}
+.brand_right h3 {
+    font-size: 55px;
+    margin-top: 0px;
+    color: #fff;
+    font-weight: 800;
+    position: relative;
+    padding-bottom: 13px;
+}
+.brand_right h3:before{
+  position: absolute;
+  content : "";
+  bottom: 0px;
+  height: 10px;
+  width: 17%;
+  background-color: #fff;
 }
 .box{
   padding: 0px;
@@ -117,7 +156,7 @@ footer p {
 }
 .box_content p {
     font-weight: 300;
-    font-size: 18px;
+    font-size: 17px;
     color: #5C6A88;
     padding-top: 15px;
 }
@@ -154,3 +193,10 @@ footer p {
   left: 0px;
   background-color: #091C4B;
 }
+.our_story_right h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.our_story_right p {
+    color: #5C6A88;
+    font-size: 16px;
