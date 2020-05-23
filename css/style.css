@@ -488,6 +488,9 @@ ul.common_brands{
   .brands .bottom {
     padding: 40px 0px 40px 30px;
 }
+.box_content h4 span {
+    font-size: 30px;
+}
   .banner:before{
     display: none !important;
   }
@@ -513,7 +516,7 @@ ul.common_brands{
     padding: 30px 0px 30px;
 }
 .box .text {
-    padding: 42px 0px 42px 15px;
+    padding: 42px 15px;
 }
 .box_content h4{
   font-size: 30px;
