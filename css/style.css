@@ -485,6 +485,9 @@ ul.common_brands{
   .banner h1{
     font-size:38px;
   }
+  .brands .bottom {
+    padding: 40px 0px 40px 30px;
+}
   .banner:before{
     display: none !important;
   }
