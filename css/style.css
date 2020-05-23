@@ -58,18 +58,18 @@ ul#menu-primary li:last-child a:before {
     background-color: #fff;
 }
 .AppMenu ul li a {
-  padding: 20px 17px;
-  font-size: 18px;
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: -0.4px;
-  color: #000;
-  transition: 0s;
-  font-family: 'Monster', sans-serif !important;
-  margin-left:8px;
-  position: relative;
+    padding: 20px 17px;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    color: #000;
+    transition: 0s;
+    font-family: 'Monster', sans-serif !important;
+    margin-left: 6px;
+    position: relative;
 }
 .AppMenu ul li {
   display: inline-block;
@@ -344,6 +344,11 @@ div#back2Top i {
 .our_story_right p {
     color: #5C6A88;
     font-size: 16px;
+}
+@media only screen and (min-width:991px){
+  .box_content {
+    padding: 0px 30px;
+}
 }
 @media only screen and (max-width:991px){
   .AppToggle{
