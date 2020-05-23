@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden !important;
+}
 body,h1,h2,h3,h4,h5,h6,div,a,span{
   font-family: 'Poppins', sans-serif;
 }
@@ -385,5 +388,56 @@ div#back2Top i {
   }
   .logo a img {
     width: 140px;
+}
+ul.anime {
+    top: 52.5%;
+}
+.our_story {
+    padding: 50px 0px;
+}
+.brands{
+  background: unset;
+  padding: 0px;
+}
+.brands .top {
+    background-color: #f7f7f7;
+}
+.brands .bottom {
+    background-color: #2C69FF;
+    padding: 40px 0px 40px 64px;
+}
+.extraheight {
+    display: none;
+}
+.brand_right h3:before{
+  width:9%;
+}
+.box {
+    flex-direction: column;
+}
+.box li {
+    width: 100%;
+}
+.box li img{
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.box li a img{
+  height: 14px;
+  width: 22px;
+}
+.box .down {
+    order: 2;
+}
+.box_content {
+    max-width: 100%;
+}
+.box .text {
+    padding: 42px 0px 42px 64px;
+}
+ul.common_brands{
+  margin-right: 0px;
 }
 }
