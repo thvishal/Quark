@@ -12,6 +12,7 @@ li{
 }
 a,a:hover{
   text-decoration: none;
+  cursor: pointer;
 }
 .logo img {
     width: 115px;
